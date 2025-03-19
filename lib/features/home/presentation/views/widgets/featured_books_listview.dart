@@ -1,3 +1,4 @@
+import 'package:bookly_app_mvvm/constants.dart';
 import 'package:bookly_app_mvvm/core/utils/widgets/custom_err_widget.dart';
 import 'package:bookly_app_mvvm/core/utils/widgets/custom_loading_indicator.dart';
 import 'package:bookly_app_mvvm/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
@@ -34,7 +35,7 @@ class FeaturedBooksListView extends StatelessWidget {
                       child: CustomBookImage(
                         imgUrl: state.books[index].volumeInfo.imageLinks
                                 ?.thumbnail ??
-                            '',
+                            kimageNotFound,
                       ),
                     ),
                   );
